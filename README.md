@@ -1,0 +1,69 @@
+# Recommender System
+
+# Project Overview
+This project was done as part of my Data Science Practicum II to better understand the process of designing a recommendation system.
+
+Recommendation Systems are used in various industries to provide recommendations for products such as movies and books.
+These recommendations are based on finding similaties in items and/or users to recommend a product that might be of interest to the 
+consumer.  
+
+# Data Observations
+
+* The data was obtained from http://www2.informatik.uni-freiburg.de/~cziegler/BX/
+* The data contained three files book and rating related files:
+  1) BX-Books - 271,380 observations
+  2) BX-Users - 278,858 observations
+  3) BX-Book-Ratings - 1,149,780 observations
+ 
+# Data Cleaning Approach
+
+ * Inital matrix size was 75,670,906,880 and sparsity of the matrix was very high at 99.9%.
+   In an effort to reduce the matrix size I performed the following:
+   1) Removed the ratings with no associated book
+   2) Removed books with overall total rating less than 50
+   3) Included books from USA only
+
+
+# Data Composition
+
+After the data cleaning was complete, the data consisted of the following:
+
+* Distribution of Age of users:
+
+![Age Distribution](https://github.com/dvroman22/RecSys/blob/master/distage.png)
+
+* Distribution of Book Ratings of users:
+
+![Book Rating Distribution](https://github.com/dvroman22/RecSys/blob/master/distrtplot.svg?sanitize=true)
+
+ * Distribution of Ratings counts: 
+ 
+![Summary of Ratings](https://github.com/dvroman22/RecSys/blob/master/numrtplot.svg?sanitize=true)
+
+# Recommendation System Approaches - Collaborative Filtering
+
+* Produce simple popularity based recommendation system
+* Produce KNN with cosine similarity recommendation system using scikit-nearest neighbors
+* Produce Singular Value Decomposition (Dimensionality Reduction) recommendation system using scikit Truncated SVD
+* Utilize the Surprise Library to analyze and build recommendations
+
+# Modeling Analysis
+
+* Used a benchmark of algorithms available in the Surprise libary to determine lowest RMSE
+
+
+![Alt text](https://github.com/dvroman22/RecSys/blob/master/algoplt.svg?sanitize=true)
+
+
+# Conclusions
+
+* Overall, the recommendations for all approaches made sense.  Some of the approaches take like popularity based recommendation system
+would most like not be used in practice but I used it to compared to the other approaches.
+
+* The Surprise Library had many algorithms to choose from and the documentation was extemely helpful.
+
+# References
+
+YouTube link: https://youtu.be/
+
+Chen, D.Y (2008) Pandas for Everyone: Pearson Education, Inc.
