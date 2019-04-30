@@ -57,9 +57,9 @@ After the data cleaning was complete, the data consisted of the following:
 
 # Conclusions
 
-* Overall, the recommendations for all approaches made sense.  Some of the approaches take like popularity based recommendation system
-would most like not be used in practice but I used it to compared to the other approaches.
-
+* Data preparation for the recommender algorithms was very important and took some research and understanding.
+* Many algorithms exist in ML tools and benchmarking the different algorithms was very helpful in my analysis.
+* The recommendation from the various recommender approaches I used seemed to work fairly well and made sense, for the most part.
 * The Surprise Library had many algorithms to choose from and the documentation was extemely helpful.
 
 # References
