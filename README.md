@@ -5,12 +5,12 @@ This project was done as part of my Data Science Practicum II to better understa
 
 Recommendation Systems are used in various industries to provide recommendations for products such as movies and books.
 These recommendations are based on finding similaties in items and/or users to recommend a product that might be of interest to the 
-consumer.  
+user.  
 
 # Data Observations
 
 * The data was obtained from http://www2.informatik.uni-freiburg.de/~cziegler/BX/
-* The data contained three files book and rating related files:
+* The data contained three files:
   1) BX-Books - 271,380 observations
   2) BX-Users - 278,858 observations
   3) BX-Book-Ratings - 1,149,780 observations
@@ -49,7 +49,8 @@ After the data cleaning was complete, the data consisted of the following:
 
 # Modeling Analysis
 
-* Used a benchmark of algorithms available in the Surprise libary to determine lowest RMSE
+* Benchmark available algorithms in the Surprise libary to determine lowest RMSE
+* Display specific books to determine if the recommendations made sense
 
 
 ![Alt text](https://github.com/dvroman22/RecSys/blob/master/algoplt.svg?sanitize=true)
@@ -57,13 +58,12 @@ After the data cleaning was complete, the data consisted of the following:
 
 # Conclusions
 
-* Data preparation for the recommender algorithms was very important and took some research and understanding.
-* Many algorithms exist in ML tools and benchmarking the different algorithms was very helpful in my analysis.
-* The recommendation from the various recommender approaches I used seemed to work fairly well and made sense, for the most part.
-* The Surprise Library had many algorithms to choose from and the documentation was extemely helpful.
+* Data preparation for the recommender algorithms was very important and took some research and understanding
+* Many algorithms exist in ML tools and benchmarking the different algorithms proved to be very helpful in my analysis
+* The recommendation from the various recommender approaches I used seemed to work fairly well and made sense, for the most part
+* The Surprise Library had many algorithms to choose from and the documentation was extemely helpful
 
-# References
+# YouTube Link
 
-YouTube link: https://youtu.be/
+https://youtu.be/XXuGWZgkUE0
 
-Chen, D.Y (2008) Pandas for Everyone: Pearson Education, Inc.
